@@ -1,0 +1,28 @@
+{
+  "name": "bookfinder-watch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mailnotify": "babel-node server/watcher.js",
+    "serve": "babel-node server/server.js"
+  },
+  "author": "James Cuénod",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "freedesktop-notifications": "^1.2.2",
+    "cheerio": "^1.0.0-rc.1",
+    "request": "^2.81.0"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  }
+}
